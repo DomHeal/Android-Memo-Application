@@ -2,16 +2,25 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
     </style>
 
-        <style name="Theme.Transparent" parent="android:Theme">
-            <item name="android:windowIsTranslucent">true</item>
-            <item name="android:windowBackground">@android:color/transparent</item>
-            <item name="android:windowContentOverlay">@null</item>
-            <item name="android:windowNoTitle">true</item>
-            <item name="android:windowIsFloating">true</item>
-            <item name="android:backgroundDimEnabled">false</item>
-        </style>
+        <!--<style name="Theme.Transparent" parent="android:Theme">-->
+            <!--<item name="android:windowIsTranslucent">true</item>-->
+            <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+            <!--<item name="android:windowContentOverlay">@null</item>-->
+            <!--<item name="android:windowNoTitle">true</item>-->
+            <!--<item name="android:windowIsFloating">true</item>-->
+            <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <!--</style>-->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+    <color name="selected">#824986</color>
+    <color name="unselected">#E4DFEC</color>
 
 </resources>

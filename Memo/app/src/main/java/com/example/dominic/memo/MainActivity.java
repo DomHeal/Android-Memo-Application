@@ -3,9 +3,11 @@ package com.example.dominic.memo;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Typeface;
 import android.media.Image;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,6 +17,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+import android.widget.TextView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -30,7 +33,6 @@ public class MainActivity extends ActionBarActivity {
         list = (ListView)findViewById(R.id.commentslist);
         mDbHelper = new DbHelper(this);
         db= mDbHelper.getWritableDatabase();
-
         final ImageView alarmImage = (ImageView) findViewById(R.id.alarmImage);
 
         String[] from = {mDbHelper.TITLE, mDbHelper.DETAIL, mDbHelper.TYPE, mDbHelper.TIME, mDbHelper.DATE};
